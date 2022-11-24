@@ -25,12 +25,7 @@ const ContactForm = (props: Props) => {
     e.preventDefault();
 
     emailjs
-      .sendForm(
-        "service_bulo4ui",
-        "template_31n62vd",
-        form.current,
-        "wPX-O-ZL5CNT_q-1v"
-      )
+      .sendForm("service_bulo4ui", "template_31n62vd", "wPX-O-ZL5CNT_q-1v")
       .then(
         (result) => {
           setStatusMessage("Email sent success");
@@ -76,8 +71,8 @@ const ContactForm = (props: Props) => {
           <label className={Style.contact__form_label}>Message *</label>
           <textarea
             name="message"
-            cols="30"
-            rows="10"
+            cols={30}
+            rows={10}
             required
             placeholder="Enter your message"
             className={Style.contact__form_input}

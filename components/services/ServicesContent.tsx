@@ -11,7 +11,7 @@ import ModalStyle from "../../styles/Modal.module.scss";
 interface Props {}
 
 const ServicesContent = (props: Props) => {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState<any>(null);
   const [visible, setVisible] = useState(false);
 
   const toggleItem = (servicesItem = null) => {
@@ -20,7 +20,7 @@ const ServicesContent = (props: Props) => {
   };
   return (
     <>
-      {servicesContentData.map((services, index) => (
+      {servicesContentData.map((services: any, index: number) => (
         <div className={Style.services__content} key={services.id}>
           <div>
             {services.icon}
@@ -46,7 +46,7 @@ const ServicesContent = (props: Props) => {
             minima perferendis reiciendis animi.
           </p>
           <ul className={`${ModalStyle.modal__service} grid`}>
-            {data.serviceList.map((item, index) => (
+            {data.serviceList.map((item: any, index: number) => (
               <li className={ModalStyle.modal__service_list} key={item.id}>
                 <AiOutlineCheckCircle className={ModalStyle.modal__icon} />
                 <p className={ModalStyle.services__modal_info}>{item.title}</p>

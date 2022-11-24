@@ -5,16 +5,11 @@ import { projectsData, projectsNav } from "../../pages/Data";
 import Style from "../../styles/Portfolio.module.scss";
 import { StaticImageData } from "next/image";
 
-interface Props {
-  id: number;
-  image: StaticImageData;
-  title: string;
-  category: string;
-}
+interface Props {}
 
 const Works = (props: Props) => {
   const [item, setItem] = useState({ name: "all" });
-  const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState<any>([]);
   const [active, setActive] = useState(0);
 
   useEffect(() => {
@@ -28,7 +23,7 @@ const Works = (props: Props) => {
     }
   }, [item]);
 
-  const handleClick = (e, index) => {
+  const handleClick = (e: any, index: number) => {
     setItem({ name: e.target.textContent });
     setActive(index);
   };
@@ -54,7 +49,7 @@ const Works = (props: Props) => {
       </div>
 
       <div className={`${Style.work__container} container grid`}>
-        {projects.map((item, index) => {
+        {projects.map((item: any, index: number) => {
           return <WorksItems item={item} key={item.id} />;
         })}
       </div>
