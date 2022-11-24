@@ -7,7 +7,9 @@ import Info from "../components/about/Info";
 import { BiDownload } from "react-icons/bi";
 import Style from "../styles/About.module.scss";
 
-const About = () => {
+type Props = {};
+
+const About = (props: Props) => {
   return (
     <>
       <Head>
@@ -23,7 +25,7 @@ const About = () => {
         <span className="section__subtitle">My introduction</span>
 
         <div className={`container grid ${Style.about__container}`}>
-          <Image src={AboutImg} alt="" className={Style.about_img} />
+          <Image src={AboutImg} alt="" className={Style.about_img} priority />
           <div className={Style.about__data}>
             <Info />
             <p className={Style.about__description}>
@@ -38,7 +40,7 @@ const About = () => {
               currently looking for an opportunity to work as a web developer in
               a company which helps to grow and extend personal horizons.
             </p>
-            <a download="" href="#" className="button button--flex">
+            <a href="#" className="button button--flex">
               Download CV
               <BiDownload
                 className="button__icon"

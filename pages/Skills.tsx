@@ -1,13 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Head from "next/head";
-
-import SkillList from "../components/skills/SkillList";
-import Style from "../styles/Skills.module.scss";
 
 import FrontEnd from "../components/skills/FrontEnd";
 import BackEnd from "../components/skills/BackEnd";
 import Design from "../components/skills/Design";
 import FrameWorks from "../components/skills/FrameWorks";
+import Style from "../styles/Skills.module.scss";
 
 type Props = {};
 

@@ -4,7 +4,9 @@ import HomeHero from "../components/home/HomeHero";
 import Social from "../components/shared/Social";
 import Style from "../styles/Home.module.scss";
 
-export default function Home() {
+type Props = {};
+
+const Home = (props: Props) => {
   return (
     <div className="container">
       <Head>
@@ -13,7 +15,6 @@ export default function Home() {
           name="description"
           content="Rasika Jayasinghe Official Website & Blog"
         />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className={`section ${Style.home}`} id="home">
         <div className={`container grid ${Style.home__container}`}>
@@ -26,4 +27,6 @@ export default function Home() {
       </section>
     </div>
   );
-}
+};
+
+export default Home;

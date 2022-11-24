@@ -1,11 +1,7 @@
 import React from "react";
 
-import { DiPhp } from "react-icons/di";
-import { DiMysql } from "react-icons/di";
-import { DiNodejsSmall } from "react-icons/di";
-import { IoLogoPython } from "react-icons/io";
-import { designSkillsData } from "./Data";
 import Skills from "./Skills";
+import { designSkillsData } from "./Data";
 import Style from "../../styles/Skills.module.scss";
 
 type Props = {};
