@@ -79,8 +79,8 @@ const Header = (props: Props) => {
                   title={menuItem.title}
                   aria-hidden={true}
                 >
-                  {menuItem.icon}
-                  <span className={Style.item__name}>{menuItem.title}</span>
+                  {/* {menuItem.icon} */}
+                  {menuItem.title}
                 </Link>
               </li>
             ))}
