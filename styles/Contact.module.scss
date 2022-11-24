@@ -32,16 +32,16 @@
   margin-bottom: var(--mb-0-25);
 }
 
-.contact__card-title,
-.contact__card-data {
+.contact__card_title,
+.contact__card_data {
   font-size: var(--small-font-size);
 }
 
-.contact__card-title {
+.contact__card_title {
   font-size: var(--font-medium);
 }
 
-.contact__card-data {
+.contact__card_data {
   display: block;
   margin-bottom: var(--mb-0-75);
 }
@@ -68,13 +68,13 @@
   width: 300px;
 }
 
-.contact__from-wrapper {
+.contact__from_wrapper {
   position: relative;
   margin-bottom: var(--mb-2);
   height: 4rem;
 }
 
-.contact__form-input {
+.contact__form_input {
   position: absolute;
   top: 0;
   left: 0;
@@ -89,7 +89,7 @@
   z-index: 1;
 }
 
-.contact__form-label {
+.contact__form_label {
   position: relative;
   top: -0.75rem;
   left: 1.25rem;
@@ -99,7 +99,7 @@
   z-index: 10;
 }
 
-.contact__form-area {
+.contact__form_area {
   height: 13rem;
 
   textarea {

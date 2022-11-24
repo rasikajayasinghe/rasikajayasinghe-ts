@@ -20,7 +20,7 @@ const HomeHero = (props: Props) => {
       <a href="/contact" className="button button--flex">
         Say Hello{" "}
         <AiOutlineSend
-          className="button__icon"
+          className={Style.button__icon}
           color="var(--container-color)"
         />
       </a>
