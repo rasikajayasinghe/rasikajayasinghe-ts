@@ -1,0 +1,86 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: var(--z-index-modal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.modal__content {
+  width: 500px;
+  position: relative;
+  background-color: var(--container-color);
+  padding: 2.5rem 2.5rem 2.5rem;
+  border-radius: 1.5rem;
+}
+
+.modal__close {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--title-color);
+  cursor: pointer;
+}
+
+.modal__title,
+.modal__description {
+  text-align: left;
+}
+
+.modal__title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-1);
+}
+
+.modal__description {
+  font-size: var(--small-font-size);
+  padding: 0;
+  margin-bottom: var(--mb-2);
+}
+
+.modal__service-list {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.modal__service {
+  row-gap: 0.75rem;
+}
+
+.modal__list-icon {
+  color: var(--title-color);
+  font-size: 1.1rem;
+}
+
+.services__modal__list-info {
+  font-size: var(--small-font-size);
+}
+
+/* Modal Open */
+
+.open-modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media screen and (max-width: 576px) {
+  .modal__content {
+    padding: 4.5rem 1.5rem 2.5rem;
+  }
+
+  .modal__description {
+    padding: 0;
+  }
+}

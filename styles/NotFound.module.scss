@@ -1,0 +1,47 @@
+.notFound__container {
+  grid-template-columns: 1fr;
+  align-items: center;
+  padding: 10rem 0;
+}
+
+.notFound__title {
+  text-align: center;
+  font-size: 10rem;
+  color: var(--title-color);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+  .notFound__container {
+    padding: 8rem 0;
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  .notFound__container {
+    padding: 15rem 0;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .notFound__container {
+    padding: 15rem 0;
+  }
+
+  .notFound__title {
+    font-size: 6rem;
+  }
+}
+
+/* For small devices */
+@media screen and (max-width: 380px) {
+  .notFound__container {
+    padding: 7rem 0;
+  }
+
+  .notFound__title {
+    font-size: 6rem;
+  }
+}
