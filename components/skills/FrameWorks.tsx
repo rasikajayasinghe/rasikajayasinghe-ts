@@ -1,7 +1,7 @@
 import React from "react";
 
 import Skills from "./Skills";
-import { FrameWorksSkillsData } from "./Data";
+import { FrameWorksSkillsData } from "../../pages/Data";
 import Style from "../../styles/Skills.module.scss";
 
 type Props = {};

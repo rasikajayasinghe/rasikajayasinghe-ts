@@ -22,8 +22,20 @@ import { SiReact } from "react-icons/si";
 import { SiFlutter } from "react-icons/si";
 import { SiShopify } from "react-icons/si";
 import { SiMagento } from "react-icons/si";
-
-import Style from "../../styles/Skills.module.scss";
+import { CgWebsite } from "react-icons/cg";
+import { FaCode } from "react-icons/fa";
+import { AiFillEdit } from "react-icons/ai";
+import { TfiVideoClapper } from "react-icons/tfi";
+import { RiSoundModuleLine } from "react-icons/ri";
+import { SiArduino } from "react-icons/si";
+import Work1 from "../assets/project-img/project1.jpg";
+import Work2 from "../assets/project-img/project2.jpg";
+import Work3 from "../assets/project-img/project3.jpg";
+import Work4 from "../assets/project-img/project4.jpg";
+import Work5 from "../assets/project-img/project5.jpg";
+import Work6 from "../assets/project-img/project6.jpg";
+import Style from "../styles/Skills.module.scss";
+import ServicesStyle from "../styles/Services.module.scss";
 
 export const FrontEndSkillsData = [
   {
@@ -178,5 +190,133 @@ export const FrameWorksSkillsData = [
     icon: <SiMagento className={Style.skill_logo} />,
     skillName: "Magento",
     skillLevel: "Advanced",
+  },
+];
+
+export const servicesContentData = [
+  {
+    id: 1,
+    icon: <FaCode className={ServicesStyle.services__icon} />,
+    category: "Web",
+    serviceName: "Designing",
+    serviceList: [
+      { id: 1, title: "I designing web interface" },
+      { id: 2, title: "I designing App interface" },
+      { id: 3, title: "I designing admin interface" },
+    ],
+  },
+  {
+    id: 2,
+    icon: <CgWebsite className={ServicesStyle.services__icon} />,
+    category: "UI/UX",
+    serviceName: "Designing",
+    serviceList: [
+      { id: 1, title: "I designing web interface" },
+      { id: 2, title: "I designing Business card" },
+      { id: 3, title: "I designing logo" },
+    ],
+  },
+  {
+    id: 3,
+    icon: <AiFillEdit className={ServicesStyle.services__icon} />,
+    category: "Branding",
+    serviceName: "Designing",
+    serviceList: [
+      { id: 1, title: "I designing web interface" },
+      { id: 2, title: "I designing App interface" },
+      { id: 3, title: "I designing admin interface" },
+    ],
+  },
+  {
+    id: 4,
+    icon: <TfiVideoClapper className={ServicesStyle.services__icon} />,
+    category: "Video",
+    serviceName: "Editing",
+    serviceList: [
+      { id: 1, title: "I designing web interface" },
+      { id: 2, title: "I designing App interface" },
+      { id: 3, title: "I designing admin interface" },
+    ],
+  },
+  {
+    id: 5,
+    icon: <RiSoundModuleLine className={ServicesStyle.services__icon} />,
+    category: "Sound Track",
+    serviceName: "Mixing",
+    serviceList: [
+      { id: 1, title: "I designing web interface" },
+      { id: 2, title: "I designing App interface" },
+    ],
+  },
+  {
+    id: 6,
+    icon: <SiArduino className={ServicesStyle.services__icon} />,
+    category: "Arduino",
+    serviceName: "Development",
+    serviceList: [{ id: 1, title: "I making small robot and other project" }],
+  },
+];
+
+export const projectsData = [
+  {
+    id: 1,
+    image: Work1,
+    title: "Web design",
+    category: "web",
+  },
+  {
+    id: 2,
+    image: Work2,
+    title: "App movil",
+    category: "app",
+  },
+  {
+    id: 3,
+    image: Work3,
+    title: "Brand design",
+    category: "design",
+  },
+  {
+    id: 4,
+    image: Work4,
+    title: "App design",
+    category: "app",
+  },
+  {
+    id: 5,
+    image: Work5,
+    title: "Web design",
+    category: "web",
+  },
+  {
+    id: 6,
+    image: Work6,
+    title: "Web design",
+    category: "web",
+  },
+  {
+    id: 7,
+    image: Work6,
+    title: "Web design",
+    category: "design",
+  },
+];
+
+export const projectsNav = [
+  {
+    id: 1,
+    name: "all",
+  },
+  {
+    id: 2,
+    name: "web",
+  },
+  {
+    id: 3,
+    name: "app",
+  },
+  {
+    id: 4,
+    name: "design",
   },
 ];
