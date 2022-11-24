@@ -1,7 +1,7 @@
 import React from "react";
 
 import Skills from "./Skills";
-import { designSkillsData } from "../../pages/Data";
+import { designSkillsData } from "../../lib/Data";
 import Style from "../../styles/Skills.module.scss";
 
 type Props = {};

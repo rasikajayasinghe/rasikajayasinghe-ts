@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import WorksItems from "./WorksItems";
-import { projectsData, projectsNav } from "../../pages/Data";
+import { projectsData, projectsNav } from "../../lib/Data";
 import Style from "../../styles/Portfolio.module.scss";
 import { StaticImageData } from "next/image";
 

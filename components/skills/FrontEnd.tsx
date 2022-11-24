@@ -1,7 +1,7 @@
 import React from "react";
 
 import Skills from "./Skills";
-import { FrontEndSkillsData } from "../../pages/Data";
+import { FrontEndSkillsData } from "../../lib/Data";
 import Style from "../../styles/Skills.module.scss";
 
 type Props = {};

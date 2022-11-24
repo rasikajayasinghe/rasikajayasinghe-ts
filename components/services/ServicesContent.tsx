@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import Modal from "../../components/shared/Modal";
-import { servicesContentData } from "../../pages/Data";
+import { servicesContentData } from "../../lib/Data";
 import { BsArrowRight } from "react-icons/bs";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 

@@ -4,7 +4,7 @@ import { DiPhp } from "react-icons/di";
 import { DiMysql } from "react-icons/di";
 import { DiNodejsSmall } from "react-icons/di";
 import { IoLogoPython } from "react-icons/io";
-import { BackEndSkillData } from "../../pages/Data";
+import { BackEndSkillData } from "../../lib/Data";
 import Skills from "./Skills";
 import Style from "../../styles/Skills.module.scss";
 
